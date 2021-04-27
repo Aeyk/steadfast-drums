@@ -18,6 +18,9 @@
          background-attachment: fixed;
      }
      p {
+         display: inline;
+     }
+     article > p {
          mix-blend-mode: subtract;
          font-family: TimesNewRoman; 
      }
@@ -26,8 +29,19 @@
          margin: 0.3em 0.3em 0.3em 0.3em;
          padding: 1.5em 1.5em 1.0em 1.0em;
      }
-     article > h2 {
+     article > h1{
+         background-color: #222;
+         
+     }
+     
+     article > h1 > .alpha {
+         color:  #fff;
+     }
+     article > h2 { 
          font-size: 1.6em;
+     }
+     article > h1 > .omega {         
+         color:  #ddd;
      }
      article > h1,
      article > h2,
@@ -56,7 +70,7 @@
   <body>
     
     <article>
-      <h1>AΩ</h1>
+      <h1><p class="alpha">A</p><p class="omega">Ω</p></h1>
       <h2>Steadfast Outreach Drumming</h2>
       <address><a href="tel:7274821101">(727) 482 1101</a></address>
       <div class="meeting-schedule">
